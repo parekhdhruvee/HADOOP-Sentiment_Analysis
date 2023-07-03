@@ -31,3 +31,6 @@ The main objective to use sentimental analysis is to analyse people’s perspect
 <b> For output :</b><br>
 <h5> hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar -files mapper.py,reducer.py -mapper "python3 mapper.py 1" -reducer "python3 reducer.py" -input <your_input_csv_file_path> -output <your_output_directory_path></h5>
 
+<b> Note:</b> <br>
+- The CSV file is the output of the web data after performing the Web Scraping.<br>
+- The Sentiment Analysis using Hadoop is then performed based on the CSV file after cleaning and filtering the data as per need.<br>
